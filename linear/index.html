@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <title>Les petits plats</title>
+</head>
+<body class="bg-gray-100">
+  <header class="flex flex-col items-center py-10 bg-cover bg-center" style="background-image: url(public/images/hero-img.jpg);">
+    <img class="block w-48" src="./public/images/logo/logo.png" alt="logo" />
+    <div class="flex flex-col items-center gap-4 mt-10 text-center">
+      <h1 class="text-yellow-400 font-bold text-4xl uppercase">Cherchez parmi plus de 1500 recettes <br /> du quotidien, simples et délicieuses</h1>
+      <div class="flex items-center max-w-3xl w-full bg-white rounded-md shadow-md">
+        <input id="search-recipe" class="flex-grow p-2 rounded-l-md" type="text" placeholder="Rechercher une recette, un ingrédient,...">
+        <button class="bg-black text-white p-2 rounded-r-md"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+  </header>
+  <main class="main mx-auto px-2 bg-gray-100">
+    <div class="flex justify-between items-center m-4 ">
+     
+      <div class="filter_section inline-flex gap-4 p-5 justify-center items-center  max-md:flex-row">
+        
+      </div>
+       <!-- index.html -->
+<div class="filter_section inline-flex gap-4 p-5 justify-center items-center max-md:flex-row">
+  <!-- Add this line -->
+  <p id="recipe-count" class="text-gray-600"></p>
+</div>
+    </div>
+    <div class="flex flex-wrap gap-2 mt-5 tag_section"></div>
+    <section id="recipes-main" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 recipes-section mx-auto"></section>
+  </main>
+  <script src="scripts/pages/index.js" type="module"></script>
+</body>
+</html>

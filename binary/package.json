@@ -1,0 +1,20 @@
+{
+  "name": "lespetitsplats-simple",
+  "version": "1.0.0",
+  "description": "lespetitsplats",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx tailwindcss -i ./CSS/input.css -o ./CSS/style.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwind": "^4.0.0"
+  },
+  "dependencies": {
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38"
+  }
+}
